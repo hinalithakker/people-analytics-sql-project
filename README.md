@@ -34,6 +34,7 @@ The dashboard includes:
 - Engagement scores by department
 - Training program analysis
 - Correlation analysis between attrition and engagement
+- **Export Options**: Download data as CSV, generate PDF reports, and export chart images
 
 ## Dataset Structure
 

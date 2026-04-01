@@ -1,4 +1,6 @@
 streamlit
 pandas
 plotly
+fpdf
+kaleido
 sqlite3
