@@ -17,8 +17,23 @@ The project was designed to answer questions such as:
 ## Tools Used
 
 - SQL (SQLite)
-- Python (Pandas, sqlite3)
+- Python (Pandas, sqlite3, Streamlit, Plotly)
 - VS Code
+
+## Dashboard
+
+A interactive dashboard has been created using Streamlit to visualize the key findings. To run the dashboard:
+
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the dashboard: `streamlit run dashboard.py`
+3. Open your browser to `http://localhost:8501`
+
+The dashboard includes:
+- Key performance indicators (KPIs)
+- Attrition analysis by department
+- Engagement scores by department
+- Training program analysis
+- Correlation analysis between attrition and engagement
 
 ## Dataset Structure
 
