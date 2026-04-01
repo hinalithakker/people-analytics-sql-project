@@ -22,7 +22,9 @@ The project was designed to answer questions such as:
 
 ## Dashboard
 
-A interactive dashboard has been created using Streamlit to visualize the key findings. To run the dashboard:
+A interactive dashboard has been created using Streamlit to visualize the key findings. The dashboard loads data directly from CSV files for maximum compatibility across different environments.
+
+To run the dashboard:
 
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run the dashboard: `streamlit run dashboard.py`
