@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import sqlite3
 import plotly.express as px
 import plotly.graph_objects as go
 from fpdf import FPDF
@@ -13,18 +12,19 @@ st.set_page_config(page_title="People Analytics Dashboard", page_icon="📊", la
 # Connect to database
 @st.cache_data
 def load_data():
-    conn = sqlite3.connect("database/people_analytics.db")
+    # Load data directly from CSV files for deployment compatibility
+    employees = pd.read_csv("data/employee_data.csv")
+    engagement = pd.read_csv("data/employee_engagement_survey_data.csv")
+    training = pd.read_csv("data/training_and_development_data.csv")
 
-    # Load employees data
-    employees = pd.read_sql_query("SELECT * FROM employees", conn)
+    # Clean column names
+    employees.columns = employees.columns.str.strip().str.lower()
+    engagement.columns = engagement.columns.str.strip().str.lower()
+    training.columns = training.columns.str.strip().str.lower()
 
-    # Load engagement data
-    engagement = pd.read_sql_query("SELECT * FROM engagement", conn)
+    # Clean training column
+    training = training.rename(columns={"training_duration(days)": "training_duration_days"})
 
-    # Load training data
-    training = pd.read_sql_query("SELECT * FROM training", conn)
-
-    conn.close()
     return employees, engagement, training
 
 # Load data
