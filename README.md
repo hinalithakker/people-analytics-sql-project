@@ -70,6 +70,14 @@ Training and development data containing:
 - Engagement differences between active and exited employees were small, suggesting that engagement alone is not a strong predictor of turnover
 - Training participation was uniform across all employees, so training was not a useful differentiator in this dataset
 
+## Key Analysis Output
+
+The query below analyzes average engagement and attrition rate across departments.
+
+It highlights that Software Engineering and Production have the highest attrition despite moderate engagement levels.
+
+![Department Engagement vs Attrition](outputs/engagement_attrition_by_department.png)
+
 ## Main Business Insight
 
 Attrition appears to be driven more by role or department specific factors than by engagement alone. Technical and frontline functions showed the highest turnover, while leadership roles showed both higher engagement and lower attrition.
