@@ -100,6 +100,8 @@ This project demonstrates the ability to:
 
 An interactive dashboard is available showcasing all key metrics and visualizations. The dashboard includes export functionality for sharing insights with stakeholders.
 
+🔗 **View Live Dashboard**: https://people-analytics-sql-project-ypggdcgsbaejougvp6vpgl.streamlit.app/
+
 ---
 
 *This project showcases end-to-end data analytics capabilities, from database design to business intelligence reporting.*
