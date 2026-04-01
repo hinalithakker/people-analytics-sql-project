@@ -36,6 +36,24 @@ The dashboard includes:
 - Correlation analysis between attrition and engagement
 - **Export Options**: Download data as CSV, generate PDF reports, and export chart images
 
+## 🚀 Deployment Options
+
+### Option 1: Streamlit Cloud (Recommended)
+1. Go to [share.streamlit.io](https://share.streamlit.io)
+2. Connect your GitHub account
+3. Select this repository
+4. Set main file path to: `dashboard.py`
+5. Click Deploy!
+
+### Option 2: Local Demo
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run: `streamlit run dashboard.py`
+3. Share the local URL with your recruiter
+
+### Option 3: Heroku Deployment
+1. Create a `Procfile` with: `web: streamlit run dashboard.py --server.port $PORT --server.headless true`
+2. Deploy to Heroku using the GitHub integration
+
 ## Dataset Structure
 
 The project uses three datasets joined through `emp_id`:
